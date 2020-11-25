@@ -10,7 +10,7 @@ class DEA:
             s,
             f,
             delta):
-        self.initial_stateigmaClass = sigma
+        self.sigmaClass = sigma
         self.q = q
         self.initial_state = s
         self.f = f
@@ -62,7 +62,7 @@ class DEA:
 
     @property
     def sigma(self):
-        return self.initial_stateigmaClass
+        return self.sigmaClass
 
     @property
     def delta(self) -> set:
