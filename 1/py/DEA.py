@@ -30,7 +30,6 @@ class DEA:
             if self.current in self.f:
                 return True
             else:
-                self.current = self.initial_state
                 return False
 
         head = word[0]
@@ -43,7 +42,6 @@ class DEA:
             self.current = self.initial_state
             return result
         else:
-            self.current = self.initial_state
             return False
     
     # Aufgabe 2
