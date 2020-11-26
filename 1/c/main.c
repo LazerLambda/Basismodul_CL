@@ -13,7 +13,7 @@ struct dea* createTest() {
     int q_from[5] = {0,1,1,2,3};
     int q_to[5] = {1,2,3,4,4};
 
-    char* label_ = malloc(length * sizeof(char));
+    char label_[5];
 
     label_[0] = 'c';
     label_[1] = 'd';

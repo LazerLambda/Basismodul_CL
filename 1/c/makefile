@@ -9,8 +9,8 @@ compile: dea
 dea: DEA.h DEA.c
 		gcc -c DEA.h DEA.c $(FLAGS)
 
-test: compile
-		valgrind --tool=memcheck ./app
+test: compile clean
+		valgrind --tool=memcheck ./DEA
 
 clean:
 		rm -rf *o *gch all
